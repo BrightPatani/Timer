@@ -26,7 +26,14 @@ body {
 h1 {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .input-container {
@@ -110,6 +117,44 @@ h1 {
 
 @media (max-width: 768px) {
     .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .input-box input {
+        width: 50px;
+        font-size: 1.8em;
+    }
+
+    .start-btn {
+        padding: 12px 25px;
+        font-size: 1.2em;
+    }
+
+    .time-box {
+        font-size: 1.2em;
+    }
+
+    .time-box span:first-child {
+        font-size: 2.5em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        height: auto; 
+        overflow: hidden;
+    }
+
+    .container {
         padding: 20px;
     }
 
@@ -117,36 +162,25 @@ h1 {
         font-size: 1.8em;
     }
 
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .input-box input {
+        width: 40px;
+        font-size: 1.5em;
+    }
+
     .start-btn {
-        font-size: 1em;
         padding: 10px 20px;
+        font-size: 1.1em;
+    }
+
+    .time-box {
+        font-size: 1em;
     }
 
     .time-box span:first-child {
-        font-size: 2.5em;
-    }
-
-    .input-box input {
-        max-width: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.6em;
-    }
-
-    .time-box span:first-child {
-        font-size: 2.2em;
-    }
-
-    .input-box input {
-        max-width: 45px;
-        padding: 8px;
-    }
-
-    .start-btn {
-        font-size: 0.9em;
-        padding: 10px 15px;
+        font-size: 2em;
     }
 }
